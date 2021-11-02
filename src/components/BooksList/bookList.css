@@ -1,5 +1,5 @@
 .list {
-    width: 400px;
+    width: 450px;
     margin:auto;
     text-align: left;
     margin-top: 30px;
@@ -11,7 +11,12 @@ ul {
 }
 li {
     margin-left: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
 }
 span {
     color: #e74c3c;
+    margin: auto 10px;
 }
