@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
@@ -14,14 +13,24 @@ const Header = () => {
       </div>
       <div className="header__container header__container--nav">
         <div className="nav">
-          <Link className="nav__element" to="/">
+          <NavLink
+            className="nav__element"
+            activeClassName="active"
+            to="/"
+            exact
+          >
             my books
-          </Link>
+          </NavLink>
         </div>
         <div>
-          <Link className="nav__element" to="/add_book">
+          <NavLink
+            className="nav__element"
+            activeClassName="active"
+            to="/add_book"
+            exact
+          >
             add book
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

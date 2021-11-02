@@ -43,3 +43,7 @@
 .nav__element:hover {
     color: #333
 }
+
+a.active {
+   color: #333;
+}

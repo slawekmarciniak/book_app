@@ -1,9 +1,7 @@
 import Header from "./components/Header";
 import BookList from "./components/BooksList/BookList";
 import AddBook from "./components/AddBook";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import "./App.css";
 
 function App() {

@@ -13,6 +13,8 @@ const AddBook = () => {
     formState: { errors },
   } = useForm();
 
+  const formInputsName = ["Title", "Author", "Publishing_House", "Pages"];
+
   const onSubmit = (data) => {
     addNewBook(data);
     reset();
@@ -21,51 +23,24 @@ const AddBook = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
-      <TextField
-        id="outlined-basic"
-        label="title"
-        variant="outlined"
-        placeholder="title"
-        {...register("title", { required: true })}
-      />
+      {formInputsName.map((value) => {
+        return (
+          <>
+            <TextField
+              id="outlined-basic"
+              label={value}
+              variant="outlined"
+              placeholder={value}
+              {...register(value, { required: true })}
+            />
+            {errors.title && <span>This field is required</span>}
+          </>
+        );
+      })}
       {errors.title && <span>This field is required</span>}
-
-      <TextField
-        id="outlined-basic"
-        label="author"
-        variant="outlined"
-        placeholder="author"
-        {...register("author", { required: true })}
-      />
-      {errors.author && <span>This field is required</span>}
-
-      <TextField
-        id="outlined-basic"
-        label="publishingHouse"
-        variant="outlined"
-        placeholder="publishingHouse"
-        {...register("publishingHouse", { required: true })}
-      />
-      {errors.publishingHouse && <span>This field is required</span>}
-
-      <TextField
-        id="outlined-basic"
-        label="pages"
-        variant="outlined"
-        placeholder="pages"
-        {...register("pages", { required: true })}
-      />
-      {errors.pages && <span>This field is required</span>}
-      <Button
-        type="submit"
-        style={{ marginTop: 30 }}
-        // onClick={handleClick}
-        variant="contained"
-      >
+      <Button type="submit" style={{ marginTop: 30 }} variant="contained">
         submit
       </Button>
-      {/* 
-      <input type="submit" /> */}
     </form>
   );
 };

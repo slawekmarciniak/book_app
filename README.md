@@ -1,6 +1,6 @@
-Aplikacja zrobiona na ten moment w 4h. :)
+## 🎥 Preview site :arrow_right: [clickHere](https://my-book-pretius.web.app/)
 
-## Technologie:
+## Technologies:
 
 :white_check_mark: React.js
 <br>
@@ -13,4 +13,6 @@ Aplikacja zrobiona na ten moment w 4h. :)
 :white_check_mark: CSS & Material UI
 <br>
 :white_check_mark: useRef Hook
+<br>
+:white_check_mark: Firebase
 <br>

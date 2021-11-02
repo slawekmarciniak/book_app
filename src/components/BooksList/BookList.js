@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useContext } from "react";
 import { AppContext } from "../../AppContext/AppContext";
 import { fetchBooks } from "../../api/FakeBookApi";
@@ -19,9 +19,7 @@ const BookList = () => {
     getAllBooks();
   }, [setBooks]);
 
-  const handleClick = () => {
-    clearFilter();
-  };
+  const handleClick = () => clearFilter();
 
   return (
     <div>
@@ -32,7 +30,7 @@ const BookList = () => {
           onClick={handleClick}
           variant="contained"
         >
-          clear filter and show all books
+          clear filter
         </Button>
       )}
       <div className="list">

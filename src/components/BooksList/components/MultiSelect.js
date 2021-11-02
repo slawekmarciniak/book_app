@@ -1,9 +1,9 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
+import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import * as React from "react";
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext/AppContext";
 import "./multiselect.css";
@@ -21,15 +21,12 @@ const MultiSelect = () => {
       {books && (
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">
-              select publishing house
-            </InputLabel>
-
+            <InputLabel id="select">filter by</InputLabel>
             <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
+              labelId="select-label"
+              id="select"
               value={filter}
-              label="books"
+              label="book_filter"
               onChange={handleChange}
             >
               {books.map((e) => (

@@ -15,6 +15,7 @@ const AppProvider = ({ children }) => {
 
   const clearFilter = () => {
     setSelectedBooks(null);
+    setFilter("");
   };
 
   return (
