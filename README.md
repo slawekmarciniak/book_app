@@ -1,16 +1,18 @@
-Zrealizaowałem zadanie zgodnie z założeniami w pośpiechu i w 4h.
-W związku z powyższym skupiłem się na najważniejszych funkcjonalnościach.
-Wiem, że można lepiej. Ale prawdopodobnie wszystki wytyczne zostały zawarte w projekcie.
+## zrealizowałem zadanie zgodnie z wytycznymi, ale walczyłem z czasem więc wiele bym poprawił
 
-Zaprszama na mój github gdzie podobne aplikacje zrealizowałem nieco szczegółowiej:
+## polecam zapoznać się z innymi moimi repozytoriami na github gdzie podobne zagadnienia zrealizowałem nieco dokładniej
 
-https://github.com/slawekmarciniak
+## Technologie:
 
-Wykorzystałem technologie:
-
-React,
-ReactContext
-ReactRouter
-Reac-Hook-Form
-UseRef Hook
-CSS
+:white_check_mark: React.js
+<br>
+:white_check_mark: React Context
+<br>
+:white_check_mark: React Router
+<br>
+:white_check_mark: React-Hook-Form
+<br>
+:white_check_mark: CSS & Material UI
+<br>
+:white_check_mark: useRef Hook
+<br>
