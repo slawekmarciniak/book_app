@@ -1,6 +1,4 @@
-## zrealizowałem zadanie zgodnie z wytycznymi, ale walczyłem z czasem więc wiele bym poprawił
-
-## polecam zapoznać się z innymi moimi repozytoriami na github gdzie podobne zagadnienia zrealizowałem nieco dokładniej
+Aplikacja zrobiona na ten moment w 4h. :)
 
 ## Technologie:
 
