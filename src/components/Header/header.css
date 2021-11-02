@@ -8,6 +8,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .header__container {
